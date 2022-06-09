@@ -1,0 +1,55 @@
+body {
+  background: linear-gradient(to left, #bdc3c7, #2c3e50);
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+button {
+  background: none;
+  border: 1px solid black;
+  font-size: 30px;
+  border-radius: 5px;
+  
+}
+
+#spin,
+#reset {
+  position: absolute;
+  bottom: 25vh;
+  right: 55vw;
+}
+
+#spin:hover {
+  color: rgb(0, 180, 120);
+  border-color: rgb(0, 180, 120);
+}
+
+#spin:focus,
+#reset:focus {
+  outline: none;
+}
+
+#reset:hover {
+  color: red;
+  border-color: red;
+}
+
+
+#selector {
+  position: absolute;
+  top: 8.5vh;
+  right: 55vw;
+  font-size: 40px;
+  z-index: 3;
+}
+
+input {
+  font-size: 30px;
+  border: none;
+  border-bottom: 1px solid black;
+}
+
+
