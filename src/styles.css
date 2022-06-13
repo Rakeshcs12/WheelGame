@@ -17,9 +17,9 @@ button {
 }
 
 #spin {
-  position: absolute;
-  bottom: 28vh;
-  right: 49vw;
+  position: relative;
+  bottom:-1vh;
+  right: 19vw;
 }
 
 #spin:hover {
@@ -63,7 +63,7 @@ input {
    bottom: 22vh;
    right: 20vh;
    margin-left: 10vh;
-   left: 71vh;
+   left: 69vh;
 }
 
 #handleclick1
@@ -71,7 +71,7 @@ input {
 margin-left: 3vh;
 position: absolute;
 bottom: 22%;
-left: 91vh;
+left: 89vh;
 }
 
 #handleclick:hover {
