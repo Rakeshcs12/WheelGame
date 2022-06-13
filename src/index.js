@@ -8,13 +8,13 @@ class App extends React.Component {
   state = {
     list: [
       "1+1=2",
-      "2+2=4",
-      "6+6=12",
+      "2+2=6",
+      "6+6=13",
       "10+10=20",
       "5+6=11",
-      "9+3=12",
+      "9+3=15",
       "4+4=8",
-      "50+50=100",
+      "50+50=110",
       "12+12=24"
     ],
     radius: 90,
@@ -172,7 +172,11 @@ class App extends React.Component {
 
   render() {
     //////////////new added//////////////////////
-    const handleclick = () => {
+
+////////////////////////////////////////////////////
+    const handleclick1 = () => {
+ 
+     
       console.log("Keep Spining the wheel",this.state.result)
       var checked = this.state.list;
       checked.splice(this.state.result, 1);
@@ -180,12 +184,6 @@ class App extends React.Component {
       console.log(this.state.list);
       ctx.clearRect(0, 0, canvas.width, canvas.height);
       this.renderWheel(canvas,ctx);
-    }
-////////////////////////////////////////////////////
-    const handleclick1 = () => {
-      console.log("delete from list and spin again")
-    
-
       
     }
 
@@ -204,24 +202,16 @@ class App extends React.Component {
             WebkitTransition: `-webkit-transform ${this.state.easeOut}s ease-out`
           }}
         />
-    
-        {this.state.spinning ? (
-          <button type="button" id="reset" onClick={this.reset}>
-            reset
-          </button>
-        ) : (
-          <button type="button" id="spin" onClick={this.spin}>
-            spin
-          </button>
-
-        )}
+       <button type="button" id="spin" onClick={this.spin}>
+             spin
+           </button>
         <div className="display">
           <span id="readout">
-            YOU WON:{"  "}
+            Result:{"  "}
             <span id="result">{this.state.list[this.state.result]}</span>
           </span>
         </div>
-        <button type = "button" id="handleclick" onClick={handleclick}>Correct</button>
+        <button type = "button" id="handleclick" onClick={this.reset}>Correct</button>
     
     <button type = "button" id="handleclick1" onClick={handleclick1}>Incorrect</button>
 

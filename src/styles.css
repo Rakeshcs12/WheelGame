@@ -10,16 +10,16 @@ body {
 button {
   background: none;
   border: 1px solid black;
+
   font-size: 30px;
   border-radius: 5px;
   
 }
 
-#spin,
-#reset {
+#spin {
   position: absolute;
-  bottom: 25vh;
-  right: 55vw;
+  bottom: 28vh;
+  right: 49vw;
 }
 
 #spin:hover {
@@ -37,11 +37,17 @@ button {
   border-color: red;
 }
 
+#readout {
+  font-size: 4vh;
+  position: absolute;
+  bottom: 10vh;
+  left: 35vw;
+}
 
 #selector {
   position: absolute;
-  top: 8.5vh;
-  right: 55vw;
+  top: 9vh;
+  right: 50vw;
   font-size: 40px;
   z-index: 3;
 }
@@ -52,4 +58,28 @@ input {
   border-bottom: 1px solid black;
 }
 
+#handleclick{
+  position: absolute;
+   bottom: 22vh;
+   right: 20vh;
+   margin-left: 10vh;
+   left: 71vh;
+}
 
+#handleclick1
+{
+margin-left: 3vh;
+position: absolute;
+bottom: 22%;
+left: 91vh;
+}
+
+#handleclick:hover {
+  color: rgb(0, 180, 120);
+  border-color: rgb(0, 180, 120);
+}
+
+#handleclick1:hover {
+  color: rgb(0, 180, 120);
+  border-color: rgb(0, 180, 120);
+}
