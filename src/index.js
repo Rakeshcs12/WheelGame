@@ -15,7 +15,7 @@ class App extends React.Component {
       "9+3=15",
       "4+4=8",
       "50+50=110",
-      "12+12=24"
+      "12+12=24",
     ],
     radius: 90,
     rotate: 0,
@@ -115,9 +115,9 @@ class App extends React.Component {
 
   getColor() {
 
-    let r = Math.floor(Math.random() * 255);
-    let g = Math.floor(Math.random() * 255);
-    let b = Math.floor(Math.random() * 255);
+    let r = Math.floor(Math.random() * 155);
+    let g = Math.floor(Math.random() * 155);
+    let b = Math.floor(Math.random() * 155);
     return `rgba(${r},${g},${b},0.4)`;
   }
 
@@ -173,7 +173,6 @@ class App extends React.Component {
   render() {
     //////////////new added//////////////////////
 
-////////////////////////////////////////////////////
     const handleclick1 = () => {
  
      
@@ -207,13 +206,16 @@ class App extends React.Component {
            </button>
         <div className="display">
           <span id="readout">
-            Result:{"  "}
+            RESULT:{"  "}
             <span id="result">{this.state.list[this.state.result]}</span>
           </span>
         </div>
         <button type = "button" id="handleclick" onClick={this.reset}>Correct</button>
     
-    <button type = "button" id="handleclick1" onClick={handleclick1}>Incorrect</button>
+    <button type = "button" id="handleclick1"  onClick={() => 
+               { handleclick1();
+                  this.reset();
+                }}>Incorrect</button>
 
 
       </div>
