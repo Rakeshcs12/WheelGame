@@ -1,105 +1,105 @@
-body {
-  background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
-}
+  body {
+    background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+  }
 
-.App {
-  font-family: sans-serif;
-  text-align: center;
+  .App {
+    font-family: sans-serif;
+    text-align: center;
 
-  
-}
+    
+  }
 
-button {
-  background: none;
-  border: 2px solid white;
+  button {
+    background: none;
+    border: 2px solid white;
 
-  font-size: 30px;
-  border-radius: 5px;
-  
-}
+    font-size: 30px;
+    border-radius: 5px;
+    
+  }
 
-#spin {
-  position: relative;
-  bottom:-1vh;
-  color: white;
-  font-family: 'Times New Roman', Times, serif;
-  background-color: lightslategrey;
-  right: 19vw;
-  border-radius: 50px;
-}
+  #spin {
+    position: relative;
+    bottom:-1vh;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: lightslategrey;
+    right: 19vw;
+    border-radius: 50px;
+  }
 
-#spin:hover {
-  color: rgb(0, 180, 120);
-  border-color: rgb(0, 180, 120);
-}
+  #spin:hover {
+    color: rgb(0, 180, 120);
+    border-color: rgb(0, 180, 120);
+  }
 
-#spin:focus,
-#reset:focus {
-  outline: none;
-}
+  #spin:focus,
+  #reset:focus {
+    outline: none;
+  }
 
-#reset:hover {
-  color: red;
-  border-color: red;
-}
+  #reset:hover {
+    color: red;
+    border-color: red;
+  }
 
-#readout {
-  font-size: 3vh;
-  position: absolute;
-  bottom: 15vh;
+  #readout {
+    font-size: 4vh;
+    position: static;
+    bottom: 15vh;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    left: 41vw;
+  }
+
+  #selector {
+    position: absolute;
+    top: 9vh;
+    right: 50vw;
+    font-size: 40px;
+    z-index: 4;
+  }
+
+  input {
+    font-size: 30px;
+    border: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-bottom: 1px solid black;
+  }
+
+  #handleclick{
+    position: static;
+    bottom: 22vh;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: static;
+    background-color:lightslategrey;
+    color: #fdfdfd;
+    cursor: pointer;
+    border-radius: 55px;
+    bottom: 22%;
+
+    margin-left: 10vh;
+    left: 69vh;
+  }
+
+  #handleclick1
+  {
+  margin-left: 3vh;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  left: 41vw;
-}
-
-#selector {
-  position: absolute;
-  top: 9vh;
-  right: 50vw;
-  font-size: 40px;
-  z-index: 4;
-}
-
-input {
-  font-size: 30px;
-  border: none;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  border-bottom: 1px solid black;
-}
-
-#handleclick{
-  position: absolute;
-   bottom: 22vh;
-   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  position: absolute;
-  background-color:lightslategrey;
+  position: static;
+  background-color:lightslategray;
   color: #fdfdfd;
   cursor: pointer;
-  border-radius: 55px;
+  border-radius: 20vh;
   bottom: 22%;
-   right: 20vh;
-   margin-left: 10vh;
-   left: 69vh;
-}
+  left: 89vh;
+  }
 
-#handleclick1
-{
-margin-left: 3vh;
-font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-position: absolute;
-background-color:lightslategray;
-color: #fdfdfd;
-cursor: pointer;
-border-radius: 55px;
-bottom: 22%;
-left: 89vh;
-}
+  #handleclick:hover {
+    color: rgb(0, 180, 120);
+    border-color: rgb(0, 180, 120);
+  }
 
-#handleclick:hover {
-  color: rgb(0, 180, 120);
-  border-color: rgb(0, 180, 120);
-}
-
-#handleclick1:hover {
-  color: rgb(0, 180, 120);
-  border-color: rgb(0, 180, 120);
-}
+  #handleclick1:hover {
+    color: rgb(0, 180, 120);
+    border-color: rgb(0, 180, 120);
+  }
