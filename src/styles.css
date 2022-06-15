@@ -45,7 +45,7 @@
 
   #readout {
     font-size: 4vh;
-    position: static;
+    position: absolute;
     bottom: 15vh;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     left: 41vw;
@@ -70,7 +70,7 @@
     position: static;
     bottom: 22vh;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    position: static;
+    position: absolute;
     background-color:lightslategrey;
     color: #fdfdfd;
     cursor: pointer;
@@ -85,7 +85,7 @@
   {
   margin-left: 3vh;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  position: static;
+  position: absolute;
   background-color:lightslategray;
   color: #fdfdfd;
   cursor: pointer;
